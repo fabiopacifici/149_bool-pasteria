@@ -3,6 +3,130 @@ import Logo from "./Logo";
 
 export default function Footer() {
 
+  const pastificio = [
+    {
+      id: 1,
+      link: '#',
+      text: 'Il pastificio'
+    },
+    {
+      id: 2,
+      link: '#',
+      text: 'Il pastificio'
+    },
+    {
+      id: 3,
+      link: '#',
+      text: 'Il pastificio'
+    },
+    {
+      id: 4,
+      link: '#',
+      text: 'Il pastificio'
+    },
+    {
+      id: 5,
+      link: '#',
+      text: 'Il pastificio'
+    }
+  ]
+
+
+  const products = [
+    {
+      id: 1,
+      link: '#',
+      text: 'Boolclassica'
+    },
+    {
+      id: 2,
+      link: '#',
+      text: 'Boolclassica'
+    },
+    {
+      id: 3,
+      link: '#',
+      text: 'Boolclassica'
+    },
+    {
+      id: 4,
+      link: '#',
+      text: 'Boolclassica'
+    },
+    {
+      id: 5,
+      link: '#',
+      text: 'Boolclassica'
+    }
+  ]
+
+
+  const footerMenu = [
+    {
+      id: 1,
+      title: 'Pastificio',
+      links: [
+        {
+          id: 1,
+          link: '#',
+          text: 'Il pastificio'
+        },
+        {
+          id: 2,
+          link: '#',
+          text: 'Il pastificio'
+        },
+        {
+          id: 3,
+          link: '#',
+          text: 'Il pastificio'
+        },
+        {
+          id: 4,
+          link: '#',
+          text: 'Il pastificio'
+        },
+        {
+          id: 5,
+          link: '#',
+          text: 'Il pastificio'
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: 'Products',
+      links: [
+        {
+          id: 1,
+          link: '#',
+          text: 'Boolclassica'
+        },
+        {
+          id: 2,
+          link: '#',
+          text: 'Boolclassica'
+        },
+        {
+          id: 3,
+          link: '#',
+          text: 'Boolclassica'
+        },
+        {
+          id: 4,
+          link: '#',
+          text: 'Boolclassica'
+        },
+        {
+          id: 5,
+          link: '#',
+          text: 'Boolclassica'
+        }
+      ]
+    }
+  ]
+
+
   return (
     <>
       <footer className='py-5'>
@@ -16,21 +140,22 @@ export default function Footer() {
             <div className="col">
               <h3>Pastificio</h3>
               <ul className="list-unstyled">
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
+                {
+                  pastificio.map(item => (
+                    <li key={item.id}><a href={item.link}>{item.text}</a></li>
+                  ))
+                }
+
               </ul>
             </div>
             <div className="col">
               <h3>Prodotti</h3>
               <ul className="list-unstyled">
-                <li>la Boolclassica</li>
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
-                <li>Il pastificio</li>
+                {
+                  products.map(item => (
+                    <li key={item.id}><a href={item.link}>{item.text}</a></li>
+                  ))
+                }
               </ul>
             </div>
           </div>
