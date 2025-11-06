@@ -1,3 +1,4 @@
+import Alert from "./Alert"
 import ProductsList from "./ProductList"
 const title = 'BoolPasteria'
 const jumboMessage = 'Benvenuti nel nostro pastificio! Qui troverete la migliore selezione di paste artigianali, preparate con ingredienti di alta qualità e seguendo le tradizioni italiane. Esplorate il nostro catalogo e scoprite i sapori autentici della nostra pasta.'
@@ -18,9 +19,23 @@ export default function Main() {
       </div>
 
 
+      {/* <Alert message={'Success! Your pasta is ready'} /> */}
+
+      <div className="container-fluid">
+        
+        <Alert type={'success'}>
+          <p>Success! Your pasta is ready</p>
+        </Alert>
+
+        <Alert type={'warning'}>
+          <h4 className="alert-heading">Well done!</h4>
+          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+          <hr />
+          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </Alert>
+      </div>
 
       <ProductsList />
-
 
 
     </main>

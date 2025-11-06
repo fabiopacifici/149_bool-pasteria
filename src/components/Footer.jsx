@@ -1,64 +1,8 @@
 import Logo from "./Logo";
 
 
-export default function Footer() {
+export default function Footer({pastificio, products}) {
 
-  const pastificio = [
-    {
-      id: 1,
-      link: '#',
-      text: 'Il pastificio'
-    },
-    {
-      id: 2,
-      link: '#',
-      text: 'Il pastificio'
-    },
-    {
-      id: 3,
-      link: '#',
-      text: 'Il pastificio'
-    },
-    {
-      id: 4,
-      link: '#',
-      text: 'Il pastificio'
-    },
-    {
-      id: 5,
-      link: '#',
-      text: 'Il pastificio'
-    }
-  ]
-
-
-  const products = [
-    {
-      id: 1,
-      link: '#',
-      text: 'Boolclassica'
-    },
-    {
-      id: 2,
-      link: '#',
-      text: 'Boolclassica'
-    },
-    {
-      id: 3,
-      link: '#',
-      text: 'Boolclassica'
-    },
-    {
-      id: 4,
-      link: '#',
-      text: 'Boolclassica'
-    },
-    {
-      id: 5,
-      link: '#',
-      text: 'Boolclassica'
-    }
-  ]
 
 
   const footerMenu = [

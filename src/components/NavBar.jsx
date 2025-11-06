@@ -1,31 +1,4 @@
-export default function NavBar(){
-
- const menu = [
-    {
-      id:1, 
-      link: '#',
-      text: 'Home',
-      is_active: false
-    },
-    {
-      id: 2,
-      link: '#',
-      text: 'Prodotti',
-      is_active: true
-    },
-    {
-      id: 3,
-      link: '#',
-      text: 'Chi Siamo',
-      is_active: false
-    },
-    {
-      id: 4,
-      link: '#',
-      text: 'Contatti',
-      is_active: false
-    },
-  ]
+export default function NavBar({menu}){
 
   return (
 

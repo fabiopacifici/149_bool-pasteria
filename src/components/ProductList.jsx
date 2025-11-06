@@ -1,4 +1,6 @@
-export default function ProductsList(){
+import Card from "./Card";
+
+export default function ProductsList() {
   const products = [
     {
       id: 1,
@@ -96,16 +98,7 @@ export default function ProductsList(){
 
           {
             products.map(product => (
-              <div className="col" key={product.id}>
-                <div className="card h-100">
-                  <img className="card-img-top" src={product.src} alt='' />
-                  <div className="card-body">
-                    <h4>{product.title}</h4>
-                    <div>Type: {product.type}</div>
-                    <div>Cooking time: {product.time}min</div>
-                  </div>
-                </div>
-              </div>
+             <Card key={product.id} title={product.title} time={product.time} src={product.src} type={product.type} />
             ))
           }
 

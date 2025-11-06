@@ -3,14 +3,14 @@ import NavBar from "./NavBar";
 //import boolLogo from '../assets/img/bool-pasta.png'
 
 
-export default function Header() {
+export default function Header({slogan, menu}) {
 
  
 
   return (
     <header>
-      <Logo />
-      <NavBar />
+      <Logo slogan={slogan} />
+      <NavBar menu={menu} />
     </header>
   )
 }
