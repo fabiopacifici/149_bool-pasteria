@@ -5,7 +5,7 @@ export default function Alert({ type, children }) {
 
   return (
     <div
-      class={`alert alert-${type || 'info'}`}
+      className={`alert alert-${type || 'info'}`}
       role="alert">
 
       {/* <p>{message}</p> */}
